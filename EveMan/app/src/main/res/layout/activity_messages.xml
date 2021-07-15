@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <include layout="@layout/content_messages" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="hideKeyboard">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.tonyk.promac.Messages">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="686dp">
+
+                <TextView
+                    android:id="@+id/messagesWelcomeText"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/messagesWelcomeText"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabOpenMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="25dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/ic_add_white_36dp"
+                android:theme="@style/Theme.Design.Light" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabMessagesToProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="25dp"
+                android:layout_marginEnd="90dp"
+                android:src="@drawable/ic_person_pin_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabMessagesToSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="25dp"
+                android:layout_marginEnd="156dp"
+                android:src="@drawable/ic_search_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabMessagesToCreateEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="90dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/add_event"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabMessagesToEditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="150dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/edit_event"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabMessagesToCalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="90dp"
+                android:layout_marginEnd="90dp"
+                android:src="@drawable/ic_event_note_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabMessagesToMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="650dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/ic_dashboard_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

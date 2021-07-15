@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.tonyk.promac.Login">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/loginText"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="230dp"
+            android:layout_height="48dp"
+            android:layout_alignStart="@+id/loginPass"
+            android:layout_below="@+id/loginText"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/loginEmail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/loginPass"
+            android:layout_width="230dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@+id/loginText"
+            android:layout_alignTop="@+id/loginEmail"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="38dp"
+            android:ems="10"
+            android:hint="@string/loginPass"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/ripple_effect"
+            android:text="@string/loginBtn"
+            android:textColor="#fff" />
+
+        <ProgressBar
+            android:id="@+id/loginProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/loginProgressBar"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

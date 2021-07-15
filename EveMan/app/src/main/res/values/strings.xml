@@ -1,0 +1,187 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">ProMac</string>
+
+    <!-- App -->
+    <string name="action_settings">Menu settings</string>
+
+    <!-- Startapp and Splashscreen -->
+    <string name="title_activity_startapp">Startapp</string>
+    <string name="loadingBar">Loading</string>
+    <string name="welcomeTextStartapp">Welcome to \nEvent Manager</string>
+    <string name="logoDP">Dataport</string>
+    <string name="startAppText">Get started with signing up or \nlogging in into your account</string>
+    <string name="goToRegistration">RegistrationImageBtn</string>
+    <string name="goToLogin">LoginImageBtn</string>
+    <string name="imageBtnRegisterText">Register</string>
+    <string name="imageBtnLoginText">Login</string>
+
+
+    <!-- Register -->
+    <string name="title_activity_register">Register</string>
+    <string name="registerText">Create an account</string>
+    <string name="regEmail">Email</string>
+    <string name="regPass">Password</string>
+    <string name="regConfirmPass">Confirm Password</string>
+    <string name="regBtn">Sign up</string>
+    <string name="regNotRequired"><u>Already have an account? Sign in!</u></string>
+    <string name="regProgressBar">Progress Bar Register</string>
+
+
+    <!-- Login -->
+    <string name="title_activity_login">Login</string>
+    <string name="loginText">Log in to your account</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginPass">Password</string>
+    <string name="loginBtn">Sign in</string>
+    <string name="loginProgressBar">Progress Bar Login</string>
+
+
+    <!-- Mainpage -->
+    <string name="title_activity_mainpage">Mainpage</string>
+    <string name="settingsBtn">Settings</string>
+    <string name="logoutBtn">Sign out</string>
+    <string name="mainpageText">Menu:</string>
+
+    <string name="cardProfile">My profile</string>
+    <string name="cardMessages">Messages</string>
+    <string name="cardSearch">Search user</string>
+    <string name="cardCreateEvent">Create event</string>
+    <string name="cardEditEvent">Events</string>
+    <string name="cardCalender">Calendar</string>
+
+    <string name="cardImageProfile">Image0</string>
+    <string name="cardImageMessage">Image1</string>
+    <string name="cardImageSearch">Image2</string>
+    <string name="cardImageCreateEvent">Image3</string>
+    <string name="cardImageEditEvent">Image4</string>
+    <string name="cardImageCalender">Image5</string>
+
+    <!-- Messages -->
+    <string name="title_activity_messages">Messages</string>
+    <string name="messagesWelcomeText">Messages Page</string>
+
+    <!-- Calender -->
+    <string name="title_activity_calender">Calender</string>
+    <string name="calenderWelcomeText">Calender Page</string>
+
+    <!-- Profile -->
+    <string name="title_activity_profile">Profile</string>
+    <string name="profileInfoText">Information:</string>
+    <string name="profileInfoField">Field</string>
+    <string name="profileInfoPhoto">Photo</string>
+    <string name="profileInfoName">Name</string>
+    <string name="profileInfoEmail">Email</string>
+    <string name="uploadPhoto">Upload photo</string>
+    <string name="profileInfoImageLeitzeichen">Signatur</string>
+    <string name="profileInfoTelephone">Phone:</string>
+    <string name="profileInfoTelephoneText">Tel.</string>
+    <string name="profileInfoDepartment">Depart-\nment:</string>
+    <string name="profileInfoDepartmentText">Department Text</string>
+    <string name="profileInfoAddress">Address:</string>
+    <string name="profileInfoAddressText">Address Text</string>
+    <string name="profileInfoRoom">Room:</string>
+    <string name="profileInfoRoomText">Room Text</string>
+    <string name="profileInfoAdditional">Extra \nInfo:</string>
+    <string name="profileInfoAdditionalText">Extra Info Text</string>
+    <string name="profileSaveBtn">Save and close</string>
+    <string name="profileProgressBar">Progress bar</string>
+    <string name="uploadBtn">Upload photo</string>
+
+
+    <!-- CreateEvent -->
+    <string name="title_activity_create_event">CreateEvent</string>
+    <string name="createEventText">Event Details:</string>
+    <string name="createEventField">Field</string>
+    <string name="createEventName">Event Name</string>
+    <string name="createEventNr">No.XXX</string>
+    <string name="createEventCreator">Creator</string>
+    <string name="createEventDeadline">Deadline</string>
+    <string name="createEventMembers">Members</string>
+    <string name="createEventPurpose">Purpose</string>
+    <string name="createEventPurposeText">Purpose Text</string>
+    <string name="createEventPlan">Plan/Date</string>
+    <string name="createEventPlanText">Plan Text</string>
+    <string name="createEventPlace">Place</string>
+    <string name="createEventPlaceText">Place Text</string>
+    <string name="createEventPrice">Price</string>
+    <string name="createEventPriceText">Price Text</string>
+    <string name="createEventInfo">More \nInfo</string>
+    <string name="createEventInfoText">More Info Text</string>
+    <string name="createEventInviteMembersBtn">Invite Members</string>
+    <string name="createEventSaveBtn">Save Event</string>
+
+
+    <!-- Events -->
+    <string name="title_activity_events">Events</string>
+    <string name="eventsBtn">Go forward</string>
+    <string name="eventsSearchField">Search for an event</string>
+
+    <!-- EditEvent -->
+    <string name="title_activity_edit_event">EditEvent</string>
+    <string name="editEventText">Event Details:</string>
+    <string name="editEventField">Field</string>
+    <string name="editEventName">Event Name</string>
+    <string name="editEventCreator">Creator</string>
+    <string name="editEventDeadline">Deadline</string>
+    <string name="editEventMembers">Members</string>
+    <string name="editEventPurpose">Purpose</string>
+    <string name="editEventPurposeText">Purpose Text</string>
+    <string name="editEventPlan">Plan/Date</string>
+    <string name="editEventPlanText">Plan Text</string>
+    <string name="editEventPlace">Place</string>
+    <string name="editEventPlaceText">Place Text</string>
+    <string name="editEventPrice">Price</string>
+    <string name="editEventPriceText">Price Text</string>
+    <string name="editEventInfo">More \nInfo</string>
+    <string name="editEventInfoText">More Info Text</string>
+    <string name="editEventInviteMembersBtn">Invite Members</string>
+    <string name="editEventDeleteBtn">Delete Event</string>
+    <string name="editEventLeaveBtn">Leave Event</string>
+    <string name="editEventSaveBtn">Edit Event</string>
+
+    <!-- InviteMembers -->
+    <string name="title_activity_invite_members">InviteMembers</string>
+    <string name="inviteMembersSearchField">Search for a user</string>
+
+    <!-- Search -->
+    <string name="title_activity_search">Search</string>
+    <string name="searchUser">Find a user</string>
+
+    <!-- UserInfo -->
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="userInfoField">Field</string>
+    <string name="userInfoText">Information:</string>
+    <string name="userInfoPhoto"> *** MISSING *** </string>
+    <string name="userInfoName"><u>Name</u></string>
+    <string name="userInfoEmail"><u>Email</u></string>
+    <string name="userInfoImageLeitzeichen">Signature</string>
+    <string name="userInfoLeitzeichenText"><u>No Info!</u></string>
+    <string name="userInfoTelephone">Phone:</string>
+    <string name="userInfoTelephoneText"><u>No Info!</u></string>
+    <string name="userInfoDepartment">Depart-\nment:</string>
+    <string name="userInfoDepartmentText"><u>No Info!</u></string>
+    <string name="userInfoAddress">Address:</string>
+    <string name="userInfoAddressText"><u>No Info!</u></string>
+    <string name="userInfoRoom">Room:</string>
+    <string name="userInfoRoomText"><u>No Info!</u></string>
+    <string name="userInfoAdditional">Extra \nInfo:</string>
+    <string name="userInfoAdditionalText"><u>No Info!</u></string>
+    <string name="userInfoCloseBtn">Close</string>
+
+    <!-- TestLogin -->
+    <string name="loginFailed">The password is invalid or the user does not have a password.</string>
+    <string name="passwordIsEmpty">Password is required!</string>
+    <string name="passwordIsTooSmall">The password should be at least 6 characters!</string>
+    <string name="emailIsRequired">Email address is required!</string>
+    <string name="emailIsInvalid">Enter a valid email!</string>
+
+    <!-- TestRegister -->
+    <string name="registrationSuccessful">Your registration was successful!</string>
+    <string name="emailExistsRegistrationFailed">Email is already taken!</string>
+
+    <!-- TestInviteMembers -->
+    <string name="nobodyInvited">Nobody invited!</string>
+
+
+</resources>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <include layout="@layout/content_edit_event" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.tonyk.promac.EditEvent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp">
+
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.052083332" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.9557292" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#38000000"
+                    android:contentDescription="@string/profileInfoField"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/editEventName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="21dp"
+                    android:labelFor="@+id/editEventName"
+                    android:paddingTop="5dp"
+                    android:text="@string/editEventName"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/editEventMembers"
+                    android:layout_width="220dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:labelFor="@+id/editEventMembers"
+                    android:maxLines="3"
+                    android:scrollbars="vertical"
+                    android:text="@string/editEventMembers"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventCreator" />
+
+                <EditText
+                    android:id="@+id/editEventDeadline"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:inputType="none"
+                    android:labelFor="@+id/editEventDeadline"
+                    android:paddingTop="3dp"
+                    android:text="@string/editEventDeadline"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventMembers" />
+
+                <TextView
+                    android:id="@+id/editEventCreator"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/editEventCreator"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="@+id/editEventName"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editEventName"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventName" />
+
+                <TextView
+                    android:id="@+id/editEventText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="start"
+                    android:text="@string/editEventText"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <View
+                    android:id="@+id/userInfoLine"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/red_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventText" />
+
+                <TextView
+                    android:id="@+id/editEventPurpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/editEventPurpose"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toTopOf="@+id/userInfoLine" />
+
+                <EditText
+                    android:id="@+id/editEventPurposeText"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:hint="@string/editEventPurposeText"
+                    android:lines="2"
+                    android:maxLength="240"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#000"
+                    android:textSize="16sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/editEventPurpose"
+                    app:layout_constraintStart_toEndOf="@+id/editEventPurpose" />
+
+                <TextView
+                    android:id="@+id/editEventPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/editEventPlan"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventPurpose" />
+
+                <EditText
+                    android:id="@+id/editEventPlanText"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:hint="@string/editEventPlanText"
+                    android:lines="2"
+                    android:maxLength="1200"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#000"
+                    android:textSize="16sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/editEventPlan"
+                    app:layout_constraintStart_toEndOf="@+id/editEventPlan" />
+
+                <TextView
+                    android:id="@+id/editEventPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/editEventPlace"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventPlan" />
+
+                <EditText
+                    android:id="@+id/editEventPlaceText"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:hint="@string/editEventPlaceText"
+                    android:lines="2"
+                    android:maxLength="120"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#000"
+                    android:textSize="16sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/editEventPlace"
+                    app:layout_constraintStart_toEndOf="@+id/editEventPlace" />
+
+                <TextView
+                    android:id="@+id/editEventPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/editEventPrice"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventPlace" />
+
+                <EditText
+                    android:id="@+id/editEventPriceText"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="51dp"
+                    android:hint="@string/editEventPriceText"
+                    android:lines="2"
+                    android:maxLength="120"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#000"
+                    android:textSize="16sp"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/editEventPrice"
+                    app:layout_constraintStart_toEndOf="@+id/editEventPrice" />
+
+                <TextView
+                    android:id="@+id/editEventInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/editEventInfo"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/editEventPrice" />
+
+                <EditText
+                    android:id="@+id/editEventInfoText"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="46dp"
+                    android:hint="@string/editEventInfoText"
+                    android:lines="3"
+                    android:maxLength="2400"
+                    android:maxLines="3"
+                    android:minLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#000"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/editEventInfo"
+                    app:layout_constraintStart_toEndOf="@+id/editEventInfo" />
+
+                <ImageButton
+                    android:id="@+id/editEventInviteMembersBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ripple_effect"
+                    android:contentDescription="@string/editEventInviteMembersBtn"
+                    android:src="@drawable/ic_person_add_white_24dp"
+                    android:text="@string/editEventInviteMembersBtn"
+                    app:layout_constraintBottom_toTopOf="@+id/editEventDeadline"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                    app:layout_constraintStart_toEndOf="@+id/editEventMembers"
+                    app:layout_constraintTop_toTopOf="@+id/editEventMembers" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabOpenEditEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="25dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:theme="@style/Theme.Design.Light"
+                android:src="@drawable/ic_add_white_36dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabEditEventToProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="222dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/ic_person_pin_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabEditEventToMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginEnd="90dp"
+                android:src="@drawable/ic_dashboard_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabEditEventToCreateEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="156dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/edit_event"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabEditEventToSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="90dp"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:src="@drawable/ic_search_white_24dp"
+                android:theme="@style/Theme.Design.Light"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/editEventSaveBtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/profileSaveBtn"
+                android:src="@drawable/ic_save_white_24dp"
+                android:text="@string/profileSaveBtn"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/editEventInfo" />
+
+            <ImageButton
+                android:id="@+id/editEventDeleteBtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="107dp"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/profileSaveBtn"
+                android:src="@drawable/ic_delete_forever_white_24dp"
+                android:visibility="invisible"
+                android:text="@string/editEventDeleteBtn"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/editEventInfo" />
+
+            <ImageButton
+                android:id="@+id/editEventLeaveBtn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="25dp"
+                android:layout_marginStart="107dp"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/profileSaveBtn"
+                android:src="@drawable/ic_exit_to_app_white_24dp"
+                android:visibility="invisible"
+                android:text="@string/editEventLeaveBtn"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/editEventInfo" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

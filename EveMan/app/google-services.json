@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "279325692346",
+    "firebase_url": "https://androidapp-ihkproject.firebaseio.com",
+    "project_id": "androidapp-ihkproject",
+    "storage_bucket": "androidapp-ihkproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279325692346:android:f02ed89038eab1a8",
+        "android_client_info": {
+          "package_name": "com.example.tonyk.promac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279325692346-2drjme7pdrapvle0buh2p6gni474e3ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tonyk.promac",
+            "certificate_hash": "5764a66195c034bd83f462e57b184bc6981f9b04"
+          }
+        },
+        {
+          "client_id": "279325692346-bd0tivgd9lkegcjht24q10e80ts33kjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnO1-4ln1zSz5edCX_lb64iH0HJwtYhRs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279325692346-bd0tivgd9lkegcjht24q10e80ts33kjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

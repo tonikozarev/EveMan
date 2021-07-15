@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tonyk.promac">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Startapp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_startapp"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Register"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Mainpage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_mainpage"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Profile"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Messages"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_messages"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".CreateEvent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_create_event"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Search"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".EditEvent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_edit_event"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Calender"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_calender"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Events"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_events"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".InviteMembers"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_invite_members"
+            android:theme="@style/FullscreenTheme"/>
+        <activity
+            android:name=".UserInfo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_user_info"
+            android:theme="@style/FullscreenTheme"/>
+    </application>
+
+</manifest>

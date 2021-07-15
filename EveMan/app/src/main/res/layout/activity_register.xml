@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/regForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.tonyk.promac.Register">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="340dp"
+        android:layout_height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/regText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regProgressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            android:text="@string/registerText"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/regEmail"
+            android:layout_width="230dp"
+            android:layout_height="36dp"
+            android:layout_above="@+id/regPass"
+            android:layout_alignStart="@+id/regConfirmPass"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/regEmail"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/regPass"
+            android:layout_width="230dp"
+            android:layout_height="36dp"
+            android:layout_alignStart="@+id/regEmail"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/regPass"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/regConfirmPass"
+            android:layout_width="230dp"
+            android:layout_height="36dp"
+            android:layout_alignEnd="@+id/regText"
+            android:layout_below="@+id/regPass"
+            android:layout_gravity="center"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="@string/regConfirmPass"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/regConfirmPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ripple_effect"
+            android:text="@string/regBtn"
+            android:textColor="#fff" />
+
+        <ProgressBar
+            android:id="@+id/regProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/regProgressBar"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

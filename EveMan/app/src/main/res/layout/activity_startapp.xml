@@ -1,0 +1,102 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.tonyk.promac.Startapp">
+
+    <ImageView
+        android:id="@+id/logoDP"
+        android:layout_width="240dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/logoDP"
+        app:srcCompat="@drawable/logo_dp" />
+
+    <TextView
+        android:id="@+id/startAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoDP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/startAppText"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/goToRegistration"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/startAppText"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ripple_effect"
+        android:contentDescription="@string/goToRegistration"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/register" />
+
+    <ImageButton
+        android:id="@+id/goToLogin"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/startAppText"
+        android:layout_marginEnd="21dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ripple_effect"
+        android:contentDescription="@string/goToLogin"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/imageBtnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/goToRegistration"
+        android:layout_alignStart="@+id/goToRegistration"
+        android:layout_below="@+id/goToRegistration"
+        android:layout_marginTop="7dp"
+        android:clickable="false"
+        android:text="@string/imageBtnRegisterText"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/imageBtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/goToLogin"
+        android:layout_alignStart="@+id/goToLogin"
+        android:layout_below="@+id/goToLogin"
+        android:layout_marginTop="7dp"
+        android:clickable="false"
+        android:text="@string/imageBtnLoginText"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:layout_centerInParent="true"
+        android:text="@string/welcomeTextStartapp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+</RelativeLayout>
